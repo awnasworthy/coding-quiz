@@ -1,4 +1,5 @@
 var startButton = document.getElementById("start");
+var saveScore = document.getElementById("saveScore");
 var questionDisplay = document.getElementById("questionDisplay");
 var answer1 = document.getElementById('a-1');
 var answer2 = document.getElementById('a-2');
@@ -83,6 +84,8 @@ function startQuiz() {
             answer2.textContent = ''
             answer3.textContent = ''
             answer4.textContent = ''
+            saveScore.innerHTML = "<h3>Enter your initials to save your score!</h3> <input type=text></input> <button>Submit</button>"
+
         }
         else {
             timeDisplay.textContent = secondsLeft + ' seconds left'
